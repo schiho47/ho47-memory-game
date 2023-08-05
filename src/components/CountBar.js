@@ -41,18 +41,21 @@ const CountBar = ({
   }, [startCount]);
 
   return (
-    <div>
+    <>
       {startCount && !isInitial && <div className="count">{count}</div>}
-
       {isInitial && (
-        <div className="rules">
-          遊戲規則：請於10秒內記住圖片相對應的位置，時間到後，如於10次內完成全部圖片配對，即可過關。
-          <div onClick={handleStart}>開始</div>
+        <div style={{ marginBottom: "5rem" }}>
+          <div className="rules">
+            遊戲規則：請於10秒內記住圖片相對應的位置，時間到後，如於10次內完成全部圖片配對，即可過關。
+            <div onClick={handleStart}>開始</div>
+          </div>
         </div>
       )}
 
-      {!startCount && !isInitial && <div className="rules">{countTitle}</div>}
-    </div>
+      {!startCount && !isInitial && (
+        <div className="remainChance">{countTitle}</div>
+      )}
+    </>
   );
 };
 

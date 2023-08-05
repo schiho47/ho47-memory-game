@@ -10,7 +10,7 @@ import Dialog from "./components/Dialog";
 
 const initialData = animals.sort((a, b) => 0.5 - Math.random());
 function App() {
-  const [data, setData] = useState(initialData);
+  const [data, setData] = useState(() => initialData);
   const [startCount, setStartCount] = useState(false);
   const [isInitial, setIsInitial] = useState(true);
   const [remainChance, setRemainChance] = useState(10);
@@ -84,6 +84,7 @@ function App() {
     setShowModal(false);
     isPicked.current = "";
     successTimes.current = 0;
+    window.location.reload();
   };
 
   const onContainerClick = () => {

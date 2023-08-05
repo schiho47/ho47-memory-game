@@ -22,7 +22,7 @@ code {
   justify-content: space-between;
   width: 80%;
   margin: 0 auto;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 .card {
@@ -51,6 +51,15 @@ code {
   margin-top: 1rem;
   height: 50px;
   padding: auto 0;
+  margin-bottom: 2rem;
+}
+
+.remainChance {
+  color: #fec72b;
+  margin-top: 2rem;
+  height: 50px;
+  padding: auto 0;
+  margin-bottom: 0;
 }
 
 .rules div {
