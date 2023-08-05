@@ -74,3 +74,31 @@ code {
   top: 15%;
   right: 8%;
 }
+
+.modal {
+  display: block;
+  width: 500px;
+  height: 200px;
+  position: absolute;
+  z-index: 2;
+  top: 25%;
+  box-shadow: 20px 50px 50px #13284a;
+  border-radius: 10px;
+  background-color: #13284a;
+  color: #fec72b;
+  font-size: 28px;
+}
+
+.modal div {
+  margin: 2.5rem;
+}
+
+.button {
+  background-color: #fec72b;
+  color: #13284a;
+  font-size: 18px;
+  padding: 10px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+}

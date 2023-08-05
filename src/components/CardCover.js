@@ -1,6 +1,6 @@
-const CardCover = () => {
+const CardCover = ({ onClick }) => {
   return (
-    <div className="cardCover">
+    <div className="cardCover" onClick={onClick}>
       <h2>Memory</h2>
     </div>
   );
